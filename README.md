@@ -1,6 +1,8 @@
-# FireFoxHyperBold
+# Firefox Hyperbold
 
-Extension attempts to create a variant of the Google Chrome Hyper Bold extension without the overheads and long load times. Makes for easier reading generally, and assists those with ADHD/ADD. In personal use, this tool has had a tremendous impact on my productivity. Credit: https://chrome.google.com/webstore/detail/hyper-bold/bjicoipahmlimcmjoejgaoneibennoab. It applies a bold font weight to headings (h1-h6), paragraphs (p), and list items (li) on the page, making it easier to quickly scan and read content.
+Author: Rushill Shah | rushill2@bykr.net 
+
+Extension attempts to create a variant of the Google Chrome Hyper Bold extension without the overheads and long load times. Makes for easier reading generally, and assists those with ADHD/ADD. In personal use, this tool has had a tremendous impact on productivity. Credit: https://chrome.google.com/webstore/detail/hyper-bold/bjicoipahmlimcmjoejgaoneibennoab. It applies a bold font weight to headings (h1-h6), paragraphs (p), and list items (li) on the page, making it easier to quickly scan and read content.
 
 ## Installation
 
