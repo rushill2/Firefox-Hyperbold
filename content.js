@@ -5,15 +5,15 @@ function boldFirstCharacters() {
       if (element.innerText.trim().length < 100) {
         continue; // Skip elements with less than 40 characters
       }
-
-      element.style.fontFamily = "Calibri";
+  
+      element.style.fontFamily = "Arial";
       element.style.fontWeight = 300;
       const childNodes = element.childNodes;
       for (let j = 0; j < childNodes.length; j++) {
         const node = childNodes[j];
         if (node.nodeType === Node.TEXT_NODE && node.parentNode.tagName !== 'A') {
-          const words = node.textContent.trim().split(/\s+/);
-          for (let k = 0; k < words.length; k++) {
+            const words = node.textContent.trim().split(/\s+/, -1, 'preserveWhitespace');
+            for (let k = 0; k < words.length; k++) {
             const word = words[k];
             if (word.length <= 2) {
               continue; // Skip words with 2 or fewer characters
@@ -31,7 +31,7 @@ function boldFirstCharacters() {
           node.parentNode.replaceChild(newNode, node);
         }
       }
-    //   element.style.textAlign = 'justify'; // Justify the text in the element
+      //   element.style.textAlign = 'justify'; // Justify the text in the element
   
       const strongElements = element.querySelectorAll('strong');
       for (let l = 0; l < strongElements.length; l++) {
@@ -52,5 +52,8 @@ function boldFirstCharacters() {
       boldFirstCharacters();
     });
   }
-
-  boldFirstCharacters();
+  
+  window.addEventListener('scroll', function() {
+    boldFirstCharacters();
+  });
+  
